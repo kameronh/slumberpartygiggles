@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+	<title>Slumber Party Giggles</title>
+    <meta name="description" content="Kameron Hansen's Artwork and Writing">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="brains.js"></script>
+        <script>
+        var scriptString = 'THIS IS MY STRING';
+$('#clickMe').click(function(){
+    console.log('clicked')
+    $.ajax({
+      method: 'get',
+      url: 'index.php',
+      data: {
+        'myString': scriptString,
+        'ajax': true
+      },
+      success: function(data) {
+        $('#data').text(data);
+      }
+    });
+});
+        </script>
+
+</head>
+<body>
+    <div class ='commentContainer'>
+      <div class ="form">
+        <span class='inputLabel'>Anonymous Comment:</span>  
+        <div class='formButtonContainer'>
+          <textarea type="text" name="comment" id="comment" class="comment"></textarea>
+          <div class='send' id='sendComment'>Send</div>
+        </div>
+      </div>
+      <div class ="form">
+        <span class='inputLabel'>Please join the email list (email frequency, once per year):</span>
+            <div class='formButtonContainer'>
+                <textarea type="text" name="comment" id="email" class="comment">Email: </textarea>
+                <div  class = 'send' id='sendEmail'>Send</div>
+            </div>
+      </div>
+</div> 
+<script>
+
+$('#clickMe').click(function(){
+    var scriptString = $('#comment').val();
+
+    console.log('clicked')
+    $.ajax({
+      method: 'get',
+      url: 'index.php',
+      data: {
+        'myString': scriptString,
+        'ajax': true
+      },
+      success: function(data) {
+        console.log('email sent')
+      }
+    });
+});
+</script>
+</body>
+</html>
