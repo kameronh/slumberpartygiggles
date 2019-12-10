@@ -1,21 +1,27 @@
 
-
 @media (min-width: 768px) {
   .container {
     width: 768px;
   }
-
     #banner {
     width: 768px;
   }
-
   .pdf-container{
     width:100%;
   }
-
 }
 
-
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: left;
+	background-color: #A7E2E8;
+	color: white;
+	font-family: sans-serif;
+	font-size: 15px;
+}
 .pdf-container{
     width: 50%;
     min-width: 800px;

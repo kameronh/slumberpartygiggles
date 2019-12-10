@@ -8,7 +8,6 @@ body{
 	display:flex;
 	flex-direction:row;
 }
-
 .galleryMenu{
 	min-width: 200px;
     border-right: solid black 1px;
@@ -44,7 +43,7 @@ body{
 }
 
 .doodle{
-	width: 30%;
+	width: 50%;
 }
 
 .year{
@@ -83,49 +82,18 @@ body{
 .c3{
 	color:var(--c3);
 }
-/*.c3::before{
-	content:var(--sym3) var(--space);
-}
-.c3::after{
-	content:var(--space) var(--sym3);
-}*/
 .c4{
 	color:var(--c4);
 }
-/*.c4::before{
-	content:var(--sym4) var(--space);
-}
-.c4::after{
-	content:var(--space) var(--sym4);
-}*/
 .c5{
 	color:var(--c5);
 }
-/*.c5::before{
-	content:var(--sym6) var(--space);
-}
-.c5::after{
-	content:var(--space) var(--sym6);
-}*/
 .c6{
 	color:var(--c6);
 }
-/*.c6::before{
-	content:var(--sym7) var(--space);
-}
-.c6::after{
-	content:var(--space) var(--sym7);	
-}*/
 .c7{
 	color:var(--c7);
 }
-/*.c7::before{
-	content:var(--sym8) var(--space);
-}
-.c7::after{
-	content:var(--space) var(--sym8);
-}*/
-
 .c8{
 	color:var(--c8);
 }
@@ -139,131 +107,89 @@ body{
 .c9::after{
 	content:var(--space) var(--sym9);
 }
-
-
 .c10{
 	color:var(--c10);
 }
-
 .c10::before{
 	content:var(--sym10) var(--space);
 }
 .c10::after{
 	content:var(--space) var(--sym10);
 }
-
 .c11{
 	color:var(--c11);
 }
-
 .c11::before{
 	content:var(--sym11) var(--space);
 }
 .c11::after{
 	content:var(--space) var(--sym11);
 }
-
 .c12{
 	color:var(--c12);
 }
-
 .c12::before{
 	content:var(--sym12) var(--space);
 }
 .c12::after{
 	content:var(--space) var(--sym12);
 }
-
 .c13{
 	color:var(--c13);
 }
-
 .c13::before{
 	content:var(--sym13) var(--space);
 }
 .c13::after{
 	content:var(--space) var(--sym13);
 }
-
 .c14{
 	color:var(--c14);
 }
-
-/*.c14::before{
-	content:var(--sym14) var(--space);
-}
-.c14::after{
-	content:var(--space) var(--sym14);
-}*/
-
 .c15{
 	color:var(--c15);
 }
-
-/*.c15::before{
-	content:var(--sym15) var(--space);
-}
-.c15::after{
-	content:var(--space) var(--sym15);
-}*/
-
 .c16{
 	color:var(--c16);
 }
-
-
-
 .c17{
 	color:var(--c17);
 }
-
 .c17::before{
 	content:var(--sym17) var(--space);
 }
 .c17::after{
 	content:var(--space) var(--sym17);
 }
-
 .c18{
 	color:var(--c18);
 }
-
 .c18::before{
 	content:var(--sym18) var(--space);
 }
 .c18::after{
 	content:var(--space) var(--sym18);
 }
-
 .c19{
 	color:var(--c19);
 }
-
 .c19::before{
 	content:var(--sym19) var(--space);
 }
 .c19::after{
 	content:var(--space) var(--sym19);
 }
-
-
-
-
-
 .sub-title{
 	text-decoration: underline;
 	font-weight:5;
 	font-size:1.6em;
 }
-
 .sub-title:nth-child(2n+1){
 	margin-top:25px;
 }
-
 .inputLabel{
 	flex-basis:100%;
 }
-
 .columnContainer {
 	display: flex;
     flex-direction: column;
@@ -271,14 +197,12 @@ body{
 	justify-content: space-between;
     padding: 7% 20% 0px 20%;
 }
-
 .commentContainer{
 	display: flex;
 	flex-direction:row;
 	flex-flow:wrap;
 	padding: 7% 35% 0px 30%;
 }
-
 .break {
 	flex-basis: 100%;
 	height: 0;
@@ -346,14 +270,31 @@ a{
 }
 .galleryMenu ul li a{
     text-decoration:none;
-    color: #56b3ea;
+    color: #A7E2E8;
     font-size: 1.4em;
     font-weight: bold;
     line-height: 3em;
     display:block;
-
 }
-
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: left;
+	background-color: #A7E2E8;
+	color: white;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+.footer {
+	 position: fixed;
+	 left: 0;
+	 bottom: 0;
+	 width: 100%;
+	 text-align: center;
+	 font-family: sans-serif;
+}
 .fullscreen{
     z-index:1000;
     width:100%;
@@ -459,9 +400,6 @@ height:100%;
 	text-align: center;
 }
 
-
-
-
 .left{
 	align-items: center;
 	display: flex;
@@ -514,8 +452,6 @@ ul {
 }
 
 
-
-
 ul li{
 	width: 12.5%;
     text-align: center;
@@ -528,15 +464,58 @@ ul li{
 
 .left{
 	flex-basis:100%;
-
 }
-
 .right{
 	flex-basis:100%;
-
 }
 }
 /*small size*/
 @media screen and (max-width: 800px) {
 
+}
+
+.border-box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.corner-all {
+  border-radius: 2px;
+}
+.no-padding {
+  padding: 0px;
+}
+
+div#notebook {
+  font-size: 14px;
+  line-height: 20px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  width: 100%;
+  /* This spaces the page away from the edge of the notebook area */
+  padding-top: 20px;
+  margin: 0px;
+  outline: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  min-height: 100%;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 940px;
+  }
+}
+
+.row {
+  margin-left: 10px;
+  margin-right: 0px;
 }

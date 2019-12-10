@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+  <link rel="icon" href="icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<title>Slumber Party Giggles</title>
     <meta name="description" content="Kameron Hansen's Artwork and Writing">
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -23,12 +24,14 @@ $('#clickMe').click(function(){
     });
 });
         </script>
-
+        <div class="header">
+          <a href='index.html'>Home</a> &nbsp; &nbsp; Comment
+        </div>
 </head>
 <body>
     <div class ='commentContainer'>
       <div class ="form">
-        <span class='inputLabel'>Anonymous Comment:</span>  
+        <span class='inputLabel'>Anonymous Comment/Question:</span>
         <div class='formButtonContainer'>
           <textarea type="text" name="comment" id="comment" class="comment"></textarea>
           <div class='send' id='sendComment'>Send</div>
@@ -41,7 +44,7 @@ $('#clickMe').click(function(){
                 <div  class = 'send' id='sendEmail'>Send</div>
             </div>
       </div>
-</div> 
+</div>
 <script>
 
 $('#clickMe').click(function(){
