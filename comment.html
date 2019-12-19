@@ -7,24 +7,6 @@
     <meta name="description" content="Kameron Hansen's Artwork and Writing">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="brains.js"></script>
-        <script>
-        var scriptString = 'THIS IS MY STRING';
-$('#clickMe').click(function(){
-    console.log('clicked')
-    $.ajax({
-      method: 'get',
-      url: 'index.php',
-      data: {
-        'myString': scriptString,
-        'ajax': true
-      },
-      success: function(data) {
-        $('#data').text(data);
-      }
-    });
-});
-        </script>
-        <div class="header">
           <a href='index.html'>Home</a> &nbsp; &nbsp; Comment
         </div>
 </head>
@@ -47,7 +29,7 @@ $('#clickMe').click(function(){
 </div>
 <script>
 
-$('#clickMe').click(function(){
+$('.send').click(function(){
     var scriptString = $('#comment').val();
 
     console.log('clicked')
