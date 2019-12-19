@@ -211,7 +211,7 @@ body{
   .formButtonContainer{
 	  display: flex;
 	  flex-basis:100%;
-	  margin:10% 5%;
+	  margin:2% 5%;
   }
 
 
@@ -336,7 +336,8 @@ a{
 }
 
 #email{
-	height:24px
+	height:24px;
+	line-height:24px;
 }
 
 #email::before {
@@ -347,7 +348,6 @@ a{
     height: 25px;
     line-height: 25px;
     padding: 2px 1px 2px 1px;
-    margin-top: 130px;
     background-color: #1c72e8;
     color: white;
     text-align: center;
@@ -356,6 +356,14 @@ a{
     font-weight: bold;
 	width: 44px;
 	margin-left: 10%;
+}
+
+.send.comment{
+	margin-top: 130px;
+}
+
+.send.email{
+
 }
 
 

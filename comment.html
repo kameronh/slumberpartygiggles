@@ -7,7 +7,7 @@
     <meta name="description" content="Kameron Hansen's Artwork and Writing">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="brains.js"></script>
-          <a href='index.html'>Home</a> &nbsp; &nbsp; Comment
+          <a href='index.html'>Home</a> &nbsp; &nbsp; 
         </div>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <span class='inputLabel'>Anonymous Comment/Question:</span>
         <div class='formButtonContainer'>
           <textarea type="text" name="comment" id="comment" class="comment"></textarea>
-          <div class='send' id='sendComment'>Send</div>
+          <div class='send comment' id='sendComment'>Send</div>
         </div>
       </div>
       <div class ="form">
@@ -29,19 +29,40 @@
 </div>
 <script>
 
-$('.send').click(function(){
-    var scriptString = $('#comment').val();
+$('#sendEmail').click(function(){
+    var email = $('#email').val();
 
-    console.log('clicked')
+    console.log(email)
     $.ajax({
       method: 'get',
       url: 'index.php',
       data: {
-        'myString': scriptString,
+        'myString': email,
         'ajax': true
       },
       success: function(data) {
-        console.log('email sent')
+        alert('Thank you for subsribing!')
+        $('#email').val("Email: ")
+
+      }
+    });
+});
+$('#sendComment').click(function(){
+    var comment = $('#comment').val();
+
+    console.log(comment)
+    $.ajax({
+      method: 'get',
+      url: 'index.php',
+      data: {
+        'myString': comment,
+        'ajax': true
+      },
+      success: function(data) {
+        alert('Thank you for the comment!')
+        $('#comment').val("")
+
+
       }
     });
 });
